@@ -46,8 +46,9 @@ services:
         networks:
             - mynetwork
     nginx:
-        build:
-            context: .nginx/
+        image: cnocmpls/openresty
+        #build:
+        #    context: .nginx/
         ports:
             - 3002:3002
             - 4090:4090            
